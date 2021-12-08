@@ -1,4 +1,7 @@
 Blorgh2::Engine.routes.draw do
-  resources :articles
   root "static_pages#index"
+
+  resources :articles do
+    resources :comments
+  end
 end
