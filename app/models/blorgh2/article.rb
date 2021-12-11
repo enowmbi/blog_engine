@@ -1,6 +1,6 @@
 module Blorgh2
   class Article < ApplicationRecord
-    validates :title, present: true
-    validates :body, present: true
+    validates :title, presence: true
+    validates :body, presence: true
   end
 end
